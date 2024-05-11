@@ -22,7 +22,7 @@ resource "aws_lb_target_group_attachment" "attach-app" {
   target_id        = aws_instance.server1.id 
   port             = 80
 }
-resource "aws_lb_target_group_attachment" "attach-app" {
+resource "aws_lb_target_group_attachment" "attach-app1" {
   target_group_arn = aws_lb_target_group.alb-target-group.arn 
   target_id        = aws_instance.server2.id 
   port             = 80
